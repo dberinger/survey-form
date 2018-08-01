@@ -7,7 +7,7 @@
 body {
     text-align: center;
     font-family: Arial, sans-serif;
-    background-color: darkgreen;
+    background-color: #003300;
     font-size: 1em;
 }
 
@@ -72,7 +72,7 @@ button {
     text-transform: uppercase;
     padding: 1em 0.75em;
     color: whitesmoke;
-    background-color: darkgreen;
+    background-color: #003300;
     border: none;
     border-radius: 10%;
 }

@@ -22,16 +22,16 @@
             <fieldset>
                 <legend>Personal info</legend>
                 <label id="name-label" for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
                 <label id="email-label" for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <label id="number-label" for="age">Age:</label>
+                <label id="number-label" for="number">Age:</label>
                 <input type="number" id="number" name="age" placeholder="Enter your age" required min="1" max="120">
             </fieldset>
 
             <fieldset>
                 <legend>Which is your favorite animal:</legend>
-                <select id="dropdown" name="fav-animal" class="dropdown">
+                <select id="dropdown" name="fav-animal" class="dropdown" aria-labelledby="select box">
                     <option disabled value>Select an option</option>
                     <option value="aligator">Aligator</option>
                     <option value="boa">Boa</option>
@@ -47,11 +47,11 @@
             <fieldset>
                 <legend>Do you have your own pet?</legend>
                 <div class="radio-horizontal">
-                    <input type="radio" name="radio-buttons" value="yes">
+                    <input id="yes" type="radio" name="radio-buttons" value="yes">
                     <label for="yes">Yes</label>
-                    <input type="radio" name="radio-buttons" value="no">
+                    <input id="no" type="radio" name="radio-buttons" value="no">
                     <label for="no">No</label>
-                    <input type="radio" name="radio-buttons" value="idk">
+                    <input id="idk" type="radio" name="radio-buttons" value="idk">
                     <label for="idk">I don't know</label>
                 </div>
             </fieldset>
@@ -80,7 +80,7 @@
 
             <fieldset>
                 <legend>Any comments or questions?</legend>
-                <textarea name="comments" id="comments" rows="5"></textarea>
+                <textarea name="comments" id="comments" aria-labelledby="textarea" rows="5"></textarea>
             </fieldset>
             <button id="submit" type="submit">Submit!</button>
         </form>
