@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Animal Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">Animal Survey Form</h1>
+        <p id="description">Please tell us about your favorite animal in this survey.</p>
+    </header>
+
+    <main>
+
+        <form action="GET" id="survey-form">
+            <fieldset>
+                <legend>Personal info</legend>
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label id="number-label" for="age">Age:</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" required min="1" max="120">
+            </fieldset>
+
+            <fieldset>
+                <legend>Which is your favorite animal:</legend>
+                <select id="dropdown" name="fav-animal" class="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="aligator">Aligator</option>
+                    <option value="boa">Boa</option>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="elephant">Elephant</option>
+                    <option value="lion">Lion</option>
+                    <option value="tiger">Tiger</option>
+                    <option value="wolf">Wolf</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Do you have your own pet?</legend>
+                <div class="radio-horizontal">
+                    <input type="radio" name="radio-buttons" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="radio-buttons" value="no">
+                    <label for="no">No</label>
+                    <input type="radio" name="radio-buttons" value="idk">
+                    <label for="idk">I don't know</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your reasons for loving animals (check all that apply):</legend>
+                <div class="checkbox-horizontal">
+                    <div class="combo">
+                        <input id="cute" type="checkbox" name="checkboxes" value="cute">
+                        <label for="cute">Because they're super cute :3</label>
+                    </div>
+                    <div class="combo">
+                        <input id="awesome" type="checkbox" name="checkboxes" value="awesome">
+                        <label for="awesome">They are awesome!</label>
+                    </div>
+                    <div class="combo">
+                        <input id="fluffy" type="checkbox" name="checkboxes" value="fluffy">
+                        <label for="fluffy">Who else is so fluffy?</label>
+                    </div>
+                    <div class="combo">
+                        <input id="no-reason" type="checkbox" name="checkboxes" value="no-reason">
+                        <label for="no-reason">I don't need a reason!</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Any comments or questions?</legend>
+                <textarea name="comments" id="comments" rows="5"></textarea>
+            </fieldset>
+            <button id="submit" type="submit">Submit!</button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
